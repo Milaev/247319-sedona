@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Роман Милаев](https://up.htmlacademy.ru/adaptive/10/user/247319).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Сачев](https://htmlacademy.ru/profile/id11939).
 
 ---
 
