@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+  </head>
+  <body>
+    <nav class="main-nav  main-nav--closed">
+      <button class="main-nav__close" type="button" title="Закрыть">Закрыть</button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="photo.html">Фото и видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a>Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="https://htmlacademy.ru">Html academy</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="page-header">
+      <img class="page-header__logo" src="http://placehold.it/102x83" alt="City of Sedona">
+      <button class="main-nav__toogle" type="button">Открыть меню</button>
+      <article class="page-intro">
+        <div class="page-intro__wrapper">
+          <h1 class="page-header__title  visually-hidden">Sedona</h1>
+          <img class="page-intro--img-titles" src="http://placehold.it/229x39" alt="Sedona">
+        </div>
+        <h3 class="page-intro__title">Оставьте свой отзыв</h3>
+        <p class="page-intro__slogan">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </article>
+    </header>
+    <main class="main-content">
+      <form class="main-content__form" action="https://echo.htmlacademy.ru/" method="post">
+        <fieldset class="form-inner">
+          <legend class="form-inner__title">Представьтесь:</legend>
+          <label class="form-inner__label" for="name">Имя*:<input type="text" id="name" name="name" pattern="^[а-яА-ЯёЁa-zA-Z]+$" required></label>
+          <label class="form-inner__label" for="surname">Фамилия*:<input type="text" id="surname" name="surname" pattern="^[а-яА-ЯёЁa-zA-Z]+$" required></label>
+          <label class="form-inner__label" for="patronymic">Отчество:<input type="text" id="patronymic" name="patronymic" pattern="^[а-яА-ЯёЁa-zA-Z]+$"></label>
+        </fieldset>
+        <fieldset class="form-inner">
+          <legend class="form-inner__title">Контактная информация</legend>
+          <label class="form-inner__label" for="tel">Контактный телефон*:<input type="tel" id="tel" name="tel" pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$" placeholder="+7XXX1234567" required></label>
+          <span>Ошибка, перепроверьте номер</span>
+          <label class="form-inner__label" for="e-mail">Электронная почта*:<input type="email" id="e-mail" name="e-mail" required></label>
+        </fieldset>
+        <fieldset class="form-inner">
+          <legend class="form-inner__title">Ваше общее впечатление:</legend>
+          <label class="form-inner__label--bold" for="positive"><input type="radio" id="positive" name="impression" value="positive">Скорее положительное</label>
+          <label class="form-inner__label--bold" for="negative"><input type="radio" id="negative" name="impression" value="negative">Скорее отрицательное</label>
+          <label class="form-inner__label--bold" for="dontknow"><input type="radio" id="dontknow" name="impression" value="dontknow">Затрудняюсь ответить</label>
+        </fieldset>
+         <fieldset class="form-inner">
+          <legend class="form-inner__title">Посещенные достопримечательности:</legend>
+          <label class="form-inner__label--bold" for="bridge"><input type="checkbox" id="bridge" name="attraction" value="bridge">Мост дьявола</label>
+          <label class="form-inner__label--bold" for="park"><input type="checkbox" id="park" name="attraction" value="park">Слайд-парк</label>
+          <label class="form-inner__label--bold" for="bell"><input type="checkbox" id="bell" name="attraction" value="bell">Гора-колокол</label>
+          <label class="form-inner__label--bold" for="red"><input type="checkbox" id="red" name="attraction" value="red">Красные скалы</label>
+        </fieldset>
+        <fieldset class="form-inner">
+          <legend class="form-inner__title">Опишите свои эмоции:</legend>
+          <textarea id="textreview" name="textreview" placeholder="Опишите подробно все свои восторги"></textarea>
+        </fieldset>
+        <button class="main-content_button  btn" type="submit">Отправить отзыв</button>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <section class="page-footer__social">
+        <h3 class="page-footer__title">#visitsedona</h3>
+        <a class="page-footer__social-btn  social-btn--tw" href="#">Twitter</a>
+        <a class="page-footer__social-btn  social-btn--fb" href="#">Facebook</a>
+        <a class="page-footer__social-btn  social-btn--ytube" href="#">Youtube</a>
+      </section>
+      <section class="page-footer__copyright">
+        <a href="https://htmlacademy.ru">Разработано</a>
+      </section>
+    </footer>
+  </body>
+</html>

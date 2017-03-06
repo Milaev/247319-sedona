@@ -1,12 +1,112 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <meta charset="UTF-8">
+    <title>Sedona</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <nav class="main-nav  main-nav--closed">
+      <button class="main-nav__close" type="button" title="Закрыть">Закрыть</button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a>Главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="photo.html">Фото и видео</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="form.html">Форма отзыва</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="https://htmlacademy.ru">Html academy</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="page-header">
+      <img class="page-header__logo" src="http://placehold.it/102x83" alt="City of Sedona">
+      <button class="main-nav__toogle" type="button">Открыть меню</button>
+      <article class="page-intro">
+        <div class="page-intro__wrapper">
+          <h2 class="page-header__welcome  visually-hidden">Welcome to the gorgeous</h2>
+          <h1 class="page-header__title  visually-hidden">Sedona</h1>
+          <p class="page-header__slogan  visually-hidden">"Because the Grand Canyon sucks!"</p>
+          <img class="page-intro--img-titles" src="http://placehold.it/282x214" alt="Welcome to the gorgeous. Sedona. Because the Grand Canyon sucks!">
+        </div>
+        <h3 class="page-intro__title">Cедона — небольшой городок в аризоне, заслуживающий большего!</h3>
+        <p class="page-intro__slogan">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+      </article>
+    </header>
+    <main class="main-content">
+      <section class="main-content__cause">
+        <div class="main-content__wrapper">
+          <h3 class="main-content__title--white">Настоящий городок</h3>
+          <p class="main-content__counter--white">-&#8470;1-</p>
+          <p class="main-content__description--white">Седона не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <img class="main-content__picture" src="http://placehold.it/320x260" alt="Photo-city">
+        <ul class="main-content__list">
+          <li class="main-content__item">
+            <h4 class="main-content__advantage--title">Жилье</h4>
+            <p class="main-content__advantage--explanation">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </li>
+          <li class="main-content__item">
+            <h4 class="main-content__advantage--title">Сувениры</h4>
+            <p class="main-content__advantage--explanation">Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="main-content__item">
+            <h4 class="main-content__advantage--title">Еда</h4>
+            <p class="main-content__advantage--explanation">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </li>
+        </ul>
+      </section>
+      <section class="main-content__cause">
+        <div class="main-content__wrapper">
+          <h3 class="main-content__title--white">Там есть мост дьявола</h3>
+          <p class="main-content__counter--white">-&#8470;2-</p>
+          <p class="main-content__description--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+        </div>
+        <img class="main-content__picture" src="http://placehold.it/320x260" alt="Photo-bridge">
+      </section>
+      <section class="main-content__cause">
+        <div class="main-content__wrapper--gray">
+          <h3 class="main-content__title">Небольшая площадь</h3>
+          <p class="main-content__counter">-&#8470;3-</p>
+          <p class="main-content__description">Все достопримечательности находятся очень близко</p>
+        </div>
+      </section>
+      <section class="main-content__cause">
+        <div class="main-content__wrapper--gray">
+          <h3 class="main-content__title">Красивая дорога</h3>
+          <p class="main-content__counter">-&#8470;4-</p>
+          <p class="main-content__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+      </section>
+      <section class="main-content__cause">
+        <div class="main-content__wrapper--gray">
+          <h3 class="main-content__title">Мало туристов</h3>
+          <p class="main-content__counter">-&#8470;5-</p>
+          <p class="main-content__description">Большинство едет в Гранд-Каньон и толпится там</p>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <section class="page-footer__sale-block">
+        <h3 class="page-footer__title">Заинтересовались?</h3>
+        <p class="page-footer__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <a href="form.html" class="page-footer__button  btn">Найти гостиницу</a>
+      </section>
+      <section class="page-footer__map">
+        <iframe src=""></iframe>
+      </section>
+      <section class="page-footer__social">
+        <h3 class="page-footer__title">#visitsedona</h3>
+        <a class="page-footer__social-btn  social-btn--tw" href="#">Twitter</a>
+        <a class="page-footer__social-btn  social-btn--fb" href="#">Facebook</a>
+        <a class="page-footer__social-btn  social-btn--ytube" href="#">Youtube</a>
+      </section>
+      <section class="page-footer__copyright">
+        <a href="https://htmlacademy.ru">Разработано</a>
+      </section>
+    </footer>
   </body>
 </html>
