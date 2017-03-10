@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <title>Form</title>
         <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="format-detection" content="telephone=no">
     </head>
     <body class="page">
         <header class="page-header">
@@ -37,7 +39,7 @@
                 <p class="page-intro__slogan  page-intro__slogan--low-lh">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
             </article>
             <form class="form" action="https://echo.htmlacademy.ru/" method="post">
-                <section class="form-inner">
+                <fieldset class="form-inner">
                     <h3 class="form-inner__title">Представьтесь:</h3>
                     <div class="form-group">
                         <label class="form__label" for="name">Имя*:</label>
@@ -51,8 +53,8 @@
                         <label class="form__label" for="patronymic">Отчество:</label>
                         <input class="form__field" type="text" id="patronymic" name="patronymic" pattern="^[а-яА-ЯёЁa-zA-Z]+$">
                     </div>
-                </section>
-                <section class="form-inner">
+                </fieldset>
+                <fieldset class="form-inner">
                     <h3 class="form-inner__title">Контактная информация</h3>
                     <div class="form-group">
                         <label class="form__label" for="tel">Контактный телефон*:</label>
@@ -63,8 +65,8 @@
                         <label class="form__label" for="e-mail">Электронная почта*:</label>
                         <input class="form__field" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail" required>
                     </div>
-                </section>
-                <section class="form-inner">
+                </fieldset>
+                <fieldset class="form-inner">
                     <h3 class="form-inner__title">Ваше общее впечатление:</h3>
                     <div class="form-group">
                         <input class="form__field" type="radio" id="positive" name="impression" value="positive">
@@ -78,8 +80,8 @@
                         <input class="form__field" type="radio" id="dontknow" name="impression" value="dontknow">
                         <label class="form__label  form__label--bold" for="dontknow">Затрудняюсь ответить</label>
                     </div>
-                </section>
-                <section class="form-inner">
+                </fieldset>
+                <fieldset class="form-inner">
                     <h3 class="form-inner__title">Посещенные достопримечательности:</h3>
                     <div class="form-group">
                         <input class="form__field" type="checkbox" id="bridge" name="attraction" value="bridge">
@@ -97,11 +99,11 @@
                         <input class="form__field" type="checkbox" id="red" name="attraction" value="red">
                         <label class="form__label  form__label--bold" for="red">Красные скалы</label>
                     </div>
-                </section>
-                <section class="form-inner">
+                </fieldset>
+                <fieldset class="form-inner">
                     <h3 class="form-inner__title">Опишите свои эмоции:</h3>
                     <textarea class="form__field" id="textreview" name="textreview" placeholder="Опишите подробно все свои восторги"></textarea>
-                </section>
+                </fieldset>
                 <button class="btn" type="submit">Отправить отзыв</button>
             </form>
             <section class="popup  popup--closed">
