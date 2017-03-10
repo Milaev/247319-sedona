@@ -1,0 +1,10 @@
+.reason-card-wrapper {
+    background: $bg-blue;
+    color: #fff;
+    border: 2px solid blue;
+
+    &--gray {
+        background: #eeeeee;
+        color: #333;
+    }
+}

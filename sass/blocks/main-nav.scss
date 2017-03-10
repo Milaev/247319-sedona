@@ -1,0 +1,17 @@
+.main-nav {
+    background: $bg-blue;
+    color: #fff;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.main-nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    a {
+        color: #fff;
+    }
+}

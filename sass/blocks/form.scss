@@ -1,0 +1,13 @@
+.form__message {
+    text-transform: none;
+
+    &--invalid {
+        color: #ff5c5c;
+    }
+}
+
+.form__label--bold {
+    text-transform: none;
+    font-size: 18px;
+    font-weight: bold;
+}
