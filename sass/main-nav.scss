@@ -1,0 +1,19 @@
+.main-nav {
+    background: $bg-blue;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.main-nav__list {
+    margin: 0;
+}
+
+.main-nav__item {
+    list-style: none;
+}
+
+.main-nav__item a {
+    color: #ffffff;
+}

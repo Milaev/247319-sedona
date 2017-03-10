@@ -1,0 +1,9 @@
+.reason-card-wrapper {
+    background: $bg-blue;
+    color: #ffffff;
+
+    &--gray {
+        background: #eeeeee;
+        color: #333333;
+    }
+}
