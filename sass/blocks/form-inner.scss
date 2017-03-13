@@ -1,8 +1,27 @@
 .form-inner {
     line-height: 26px;
-    border: 2px solid violet;
 }
 
 .form-inner__title {
     font-size: 18px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .form-inner {
+        width: 324px;
+    }
+
+    .form-inner__title {
+        font-size: 21px;
+    }
+
+    .form-inner--order {
+        order: -1;
+    }
+
+    .form-inner--width-fullpage {
+        width: 100%;
+        text-align: center;
+    }
 }

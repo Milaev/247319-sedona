@@ -1,5 +1,9 @@
 .content-video {
-    border: 2px solid green;
+    text-align: center;
+}
+
+.content-video__item {
+    background: url("../img/video-mobile@1x.jpg") no-repeat;
 }
 
 .content-video__title {
@@ -9,4 +13,14 @@
 
 .content-video__slogan {
     line-height: 24px;
+}
+
+@media (min-width: 768px) {
+    .content-video__title {
+        font-size: 30px;
+    }
+    .content-video__item {
+        @include container();
+        background-position: center;
+    }
 }
