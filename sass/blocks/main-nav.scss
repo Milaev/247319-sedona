@@ -13,6 +13,7 @@
     text-align: center;
 
     a {
+        display: block;
         color: #fff;
     }
 }
@@ -29,6 +30,7 @@
 
     .main-nav__item {
         display: inline-block;
+        vertical-align: top;
 
         a {
             color: #333;

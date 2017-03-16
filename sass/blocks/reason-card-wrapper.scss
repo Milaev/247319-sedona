@@ -13,17 +13,8 @@
 
 @media (min-width: 768px) {
     .reason-card-wrapper {
-        flex-direction: row;
-
-        &--another-direction {
-            flex-direction: row-reverse;
-        }
-    }
-}
-
-@media (min-width: 1280px) {
-    .reason-card-wrapper {
         @include container();
+        flex-direction: row;
 
         &--another-direction {
             flex-direction: row-reverse;
@@ -39,12 +30,7 @@
 
 @media (min-width: 768px) {
     .xxx {
-        flex-direction: row;
-    }
-}
-
-@media (min-width: 1280px) {
-    .xxx {
         @include container();
+        flex-direction: row;
     }
 }
