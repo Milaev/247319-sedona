@@ -1,12 +1,12 @@
 @mixin container() {
-    width: 320px;
+    width: 280px;
     margin: 0 auto;
 
-    @media @tablet-widths {
+    @media (min-width: 768px) {
         width: 768px;
     }
 
-    @media @desktop-widths {
+    @media (min-width: 1280px) {
         width: 1200px;
     }
 }

@@ -10,8 +10,30 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    text-align: center;
 
     a {
+        display: block;
         color: #fff;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-nav {
+        background: #fff;
+    }
+
+    .main-nav__list {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .main-nav__item {
+        display: inline-block;
+        vertical-align: top;
+
+        a {
+            color: #333;
+        }
     }
 }

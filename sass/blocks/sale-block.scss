@@ -1,5 +1,5 @@
 .sale-block {
-    border: 2px solid orange;
+    text-align: center;
 }
 
 .sale-block__title {
@@ -9,4 +9,14 @@
 
 .sale-block__desc {
     line-height: 24px;
+}
+
+@media (min-width: 768px) {
+    .sale-block {
+        @include container();
+    }
+
+    .sale-block__title {
+        font-size: 30px;
+    }
 }

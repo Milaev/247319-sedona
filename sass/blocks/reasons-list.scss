@@ -1,8 +1,17 @@
 .reasons-list {
     background: #fff;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-.reasons-list__item {
-    list-style: none;
+@media (min-width: 768px) {
+    .reasons-list {
+        @include container();
+        flex-direction: row;
+    }
 }

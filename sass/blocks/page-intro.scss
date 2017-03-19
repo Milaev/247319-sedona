@@ -5,14 +5,35 @@
 
 .page-intro {
     line-height: 26px;
-    border: 2px solid red;
+    text-align: center;
 }
 
 .page-intro__title {
     font-size: 18px;
     font-weight: bold;
+    @include container();
 }
 
-.page-intro__slogan--low-lh {
-    line-height: 24px;
+.page-intro__slogan {
+    @include container();
+    margin-top: 29px;
+    margin-bottom: 28px;
+
+    &--low-lh {
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 768px) {
+    .page-intro {
+        @include container();
+    }
+
+    .page-intro__title {
+        font-size: 21px;
+
+        &--larger-fz {
+            font-size: 30px;
+        }
+    }
 }

@@ -4,7 +4,6 @@
         <meta charset="UTF-8">
         <title>Sedona</title>
         <link rel="stylesheet" href="css/style.css">
-
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <meta name="format-detection" content="telephone=no">
     </head>
@@ -48,6 +47,8 @@
                 <div class="reason-card__pic">
                     <img src="http://placehold.it/320x260" alt="Photo-city">
                 </div>
+            </section>
+            <section>
                 <ul class="reasons-list">
                     <li class="reasons-list__item  reason">
                         <h4 class="reason__title">Жилье</h4>
@@ -63,7 +64,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="reason-card-wrapper">
+            <section class="reason-card-wrapper  reason-card-wrapper--another-direction">
                 <div class="reason-card  reason-card--white">
                     <h3 class="reason-card__title">Там есть мост дьявола</h3>
                     <div class="reason-card__counter">-&#8470;2-</div>
@@ -73,27 +74,30 @@
                     <img src="http://placehold.it/320x260" alt="Photo-bridge">
                 </div>
             </section>
-            <section class="reason-card-wrapper  reason-card-wrapper--gray">
-                <div class="reason-card">
-                    <h3 class="reason-card__title">Небольшая площадь</h3>
-                    <div class="reason-card__counter">-&#8470;3-</div>
-                    <p class="reason-card__desc">Все достопримечательности находятся очень близко</p>
-                </div>
-            </section>
-            <section class="reason-card-wrapper  reason-card-wrapper--gray">
-                <div class="reason-card">
-                    <h3 class="reason-card__title">Красивая дорога</h3>
-                    <div class="reason-card__counter">-&#8470;4-</div>
-                    <p class="reason-card__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-                </div>
-            </section>
-            <section class="reason-card-wrapper  reason-card-wrapper--gray">
-                <div class="reason-card">
-                    <h3 class="reason-card__title">Мало туристов</h3>
-                    <div class="reason-card__counter">-&#8470;5-</div>
-                    <p class="reason-card__desc">Большинство едет в Гранд-Каньон и толпится там</p>
-                </div>
-            </section>
+            <!--Тут хотел задать для reason-card-wrapper--gray отдельное направление, так же как для reason-card-wrapper--another-direction пока ничего лучше не придумал обернуть лишним div-->
+            <div class="xxx">
+                <section class="reason-card-wrapper  reason-card-wrapper--gray">
+                    <div class="reason-card">
+                        <h3 class="reason-card__title">Небольшая площадь</h3>
+                        <div class="reason-card__counter">-&#8470;3-</div>
+                        <p class="reason-card__desc">Все достопримечательности находятся очень близко</p>
+                    </div>
+                </section>
+                <section class="reason-card-wrapper  reason-card-wrapper--gray">
+                    <div class="reason-card">
+                        <h3 class="reason-card__title">Красивая дорога</h3>
+                        <div class="reason-card__counter">-&#8470;4-</div>
+                        <p class="reason-card__desc">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    </div>
+                </section>
+                <section class="reason-card-wrapper  reason-card-wrapper--gray">
+                    <div class="reason-card">
+                        <h3 class="reason-card__title">Мало туристов</h3>
+                        <div class="reason-card__counter">-&#8470;5-</div>
+                        <p class="reason-card__desc">Большинство едет в Гранд-Каньон и толпится там</p>
+                    </div>
+                </section>
+            </div>
             <section class="sale-block">
                 <h3 class="sale-block__title">Заинтересовались?</h3>
                 <p class="sale-block__desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>

@@ -54,8 +54,8 @@
                         <input class="form__field" type="text" id="patronymic" name="patronymic" pattern="^[а-яА-ЯёЁa-zA-Z]+$">
                     </div>
                 </fieldset>
-                <fieldset class="form-inner">
-                    <h3 class="form-inner__title">Контактная информация</h3>
+                <fieldset class="form-inner  form-inner--width-fullpage">
+                    <h3 class="form-inner__title">Контактная информация:</h3>
                     <div class="form-group">
                         <label class="form__label" for="tel">Контактный телефон*:</label>
                         <input class="form__field" type="tel" id="tel" name="tel" pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$" placeholder="Введите телефон" required>
@@ -66,10 +66,10 @@
                         <input class="form__field" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail" required>
                     </div>
                 </fieldset>
-                <fieldset class="form-inner">
+                <fieldset class="form-inner  form-inner--order">
                     <h3 class="form-inner__title">Ваше общее впечатление:</h3>
                     <div class="form-group">
-                        <input class="form__field" type="radio" id="positive" name="impression" value="positive">
+                        <input class="form__field" type="radio" id="positive" name="impression" value="positive" checked>
                         <label class="form__label  form__label--bold" for="positive">Скорее положительное</label>
                     </div>
                     <div class="form-group">
@@ -81,26 +81,33 @@
                         <label class="form__label  form__label--bold" for="dontknow">Затрудняюсь ответить</label>
                     </div>
                 </fieldset>
-                <fieldset class="form-inner">
+                <fieldset class="form-inner  form-inner--width-fullpage">
                     <h3 class="form-inner__title">Посещенные достопримечательности:</h3>
-                    <div class="form-group">
-                        <input class="form__field" type="checkbox" id="bridge" name="attraction" value="bridge">
-                        <label class="form__label  form__label--bold" for="bridge">Мост дьявола</label>
-                    </div>
-                    <div class="form-group">
-                        <input class="form__field" type="checkbox" id="park" name="attraction" value="park">
-                        <label class="form__label  form__label--bold" for="park">Слайд-парк</label>
-                    </div>
-                    <div class="form-group">
-                        <input class="form__field" type="checkbox" id="bell" name="attraction" value="bell">
-                        <label class="form__label  form__label--bold" for="bell">Гора-колокол</label>
-                    </div>
-                    <div class="form-group">
-                        <input class="form__field" type="checkbox" id="red" name="attraction" value="red">
-                        <label class="form__label  form__label--bold" for="red">Красные скалы</label>
+                    <!-- TODO: Посмотреть на излишнюю html-вложенность -->
+                    <div class="form-group__flex-wrapper">
+                        <div>
+                            <div class="form-group">
+                                <input class="form__field" type="checkbox" id="bridge" name="attraction" value="bridge" checked>
+                                <label class="form__label  form__label--bold" for="bridge">Мост дьявола</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="form__field" type="checkbox" id="park" name="attraction" value="park" checked>
+                                <label class="form__label  form__label--bold" for="park">Слайд-парк</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-group">
+                                <input class="form__field" type="checkbox" id="bell" name="attraction" value="bell">
+                                <label class="form__label  form__label--bold" for="bell">Гора-колокол</label>
+                            </div>
+                            <div class="form-group">
+                                <input class="form__field" type="checkbox" id="red" name="attraction" value="red"  checked>
+                                <label class="form__label  form__label--bold" for="red">Красные скалы</label>
+                            </div>
+                        </div>
                     </div>
                 </fieldset>
-                <fieldset class="form-inner">
+                <fieldset class="form-inner  form-inner--width-fullpage">
                     <h3 class="form-inner__title">Опишите свои эмоции:</h3>
                     <textarea class="form__field" id="textreview" name="textreview" placeholder="Опишите подробно все свои восторги"></textarea>
                 </fieldset>
