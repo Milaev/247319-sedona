@@ -48,8 +48,7 @@ fieldset {
         align-self: flex-end;
     }
 
-     .form__field--area {
+    .form__field--area {
         @include container();
     }
 }
-
