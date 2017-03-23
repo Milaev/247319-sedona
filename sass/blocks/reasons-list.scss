@@ -4,14 +4,40 @@
     display: flex;
     flex-direction: column;
     list-style: none;
-    text-align: center;
     margin: 0;
     padding: 0;
+    padding-bottom: 35px;
+}
+
+.reasons-list__item {
+    display: block;
+    width: 209px;
+    text-align: left;
+    padding-left: 70px;
+    padding-right: 41px;
 }
 
 @media (min-width: 768px) {
     .reasons-list {
         @include container();
         flex-direction: row;
+        justify-content: space-around;
+        padding-bottom: 60px;
+    }
+
+    .reasons-list__item {
+        width: 170px;
+        padding: 0;
+        padding-top: 156px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .reasons-list {
+        justify-content: space-around;
+    }
+
+    .reasons-list__item {
+        width: 267px;
     }
 }

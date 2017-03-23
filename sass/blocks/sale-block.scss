@@ -1,22 +1,45 @@
 .sale-block {
     text-align: center;
+    display: block;
+    margin-bottom: 49px;
 }
 
 .sale-block__title {
     font-size: 21px;
     line-height: 26px;
+    margin: 0;
+    padding-top: 29px;
+    padding-bottom: 26px;
 }
 
 .sale-block__desc {
+    width: 264px;
+    margin: 0 auto;
     line-height: 24px;
+    padding-bottom: 38px;
+}
+
+.sale-block__btn {
+    padding: 19px 47px;
 }
 
 @media (min-width: 768px) {
     .sale-block {
         @include container();
+        margin-bottom: 77px;
     }
 
     .sale-block__title {
         font-size: 30px;
+        padding-top: 50px;
+        padding-bottom: 40px;
+    }
+
+    .sale-block__desc {
+        width: 439px;
+    }
+
+    .sale-block__btn {
+        padding: 19px 136px;
     }
 }

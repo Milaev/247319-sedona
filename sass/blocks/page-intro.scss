@@ -4,20 +4,24 @@
 }
 
 .page-intro {
-    line-height: 26px;
     text-align: center;
 }
 
 .page-intro__title {
     font-size: 18px;
     font-weight: bold;
-    @include container();
+    display: block;
+    margin: 0 auto;
+    width: 255px;
+    padding-top: 46px;
+    padding-bottom: 40px;
 }
 
 .page-intro__slogan {
-    @include container();
-    margin-top: 29px;
-    margin-bottom: 28px;
+    display: block;
+    width: 253px;
+    margin: 0 auto;
+    padding-bottom: 50px;
 
     &--low-lh {
         line-height: 24px;
@@ -30,10 +34,22 @@
     }
 
     .page-intro__title {
+        width: 443px;
         font-size: 21px;
+        line-height: 26px;
 
         &--larger-fz {
             font-size: 30px;
         }
+    }
+
+    .page-intro__slogan {
+        width: 489px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .page-intro__slogan {
+        line-height: 26px;
     }
 }

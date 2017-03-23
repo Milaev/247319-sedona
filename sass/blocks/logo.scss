@@ -1,3 +1,12 @@
 .logo {
+    position: absolute;
+    top: 224px;
+    left: 111px;
+}
 
+@media (min-width: 768px) {
+    .logo {
+        position: static;
+
+    }
 }

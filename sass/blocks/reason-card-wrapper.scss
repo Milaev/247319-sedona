@@ -1,14 +1,25 @@
 .reason-card-wrapper {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     background: $bg-blue;
     color: #fff;
     text-align: center;
 
     &--gray {
-        background: #eeeeee;
+        background: #eee;
         color: #333;
     }
+
+    &--white {
+        background: #fff;
+    }
+}
+
+.xxx {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -20,15 +31,7 @@
             flex-direction: row-reverse;
         }
     }
-}
 
-.xxx {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 768px) {
     .xxx {
         @include container();
         flex-direction: row;

@@ -3,22 +3,52 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    margin-top: 76px;
 }
 
 .page-footer__title {
     font-size: 21px;
+    margin: 0;
+    padding-top: 37px;
+    padding-bottom: 37px;
 }
 
 .page-footer__copyright a {
+    display: block;
     font-size: 14px;
+    color: #333;
+    padding: 48px 135px 34px 95px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 93px;
+        bottom: 34px;
+        width: 30px;
+        height: 40px;
+        background-color: #000;
+    }
 }
 
 @media (min-width: 768px) {
     .page-footer {
         @include container();
-        margin-top: 76px;
+        margin-top: 36px;
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    .page-footer__copyright a {
+        padding: 0;
+        padding-top: 37px;
+        padding-right: 28px;
+
+        &::after {
+            right: -10px;
+            bottom: -5px;
+            width: 30px;
+            height: 40px;
+            background-color: #000;
+        }
     }
 }
