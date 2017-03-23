@@ -36,7 +36,7 @@
                     <h1 class="visually-hidden">Sedona</h1>
                 </div>
                 <h3 class="page-intro__title">Оставьте свой отзыв</h3>
-                <p class="page-intro__slogan  page-intro__slogan--low-lh">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+                <p class="page-intro__slogan  page-intro__slogan--low-lh  page-intro__slogan--lowpadding">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
             </article>
             <form class="form" action="https://echo.htmlacademy.ru/" method="post">
                 <fieldset class="form-inner">
@@ -56,51 +56,51 @@
                 </fieldset>
                 <fieldset class="form-inner  form-inner--width-fullpage">
                     <h3 class="form-inner__title">Контактная информация:</h3>
-                    <div class="form-group">
-                        <label class="form__label" for="tel">Контактный телефон*:</label>
+                    <div class="form-group  form-group--column">
+                        <label class="form__label  form__label--start" for="tel">Контактный телефон*:</label>
                         <input class="form__field" type="tel" id="tel" name="tel" pattern="^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$" placeholder="Введите телефон" required>
                         <span class="form__message  form__message--invalid">Ошибка, перепроверьте номер</span>
                     </div>
-                    <div class="form-group">
-                        <label class="form__label" for="e-mail">Электронная почта*:</label>
+                    <div class="form-group  form-group--column">
+                        <label class="form__label  form__label--start" for="e-mail">Электронная почта*:</label>
                         <input class="form__field" type="email" id="e-mail" name="e-mail" placeholder="Введите e-mail" required>
                     </div>
                 </fieldset>
                 <fieldset class="form-inner  form-inner--order">
                     <h3 class="form-inner__title">Ваше общее впечатление:</h3>
-                    <div class="form-group">
+                    <div class="form-group  form-group--around">
                         <input class="form__field" type="radio" id="positive" name="impression" value="positive" checked>
                         <label class="form__label  form__label--bold" for="positive">Скорее положительное</label>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group  form-group--around">
                         <input class="form__field" type="radio" id="negative" name="impression" value="negative">
                         <label class="form__label  form__label--bold" for="negative">Скорее отрицательное</label>
                     </div>
-                    <div class="form-group">
+                    <div class="form-group  form-group--around">
                         <input class="form__field" type="radio" id="dontknow" name="impression" value="dontknow">
                         <label class="form__label  form__label--bold" for="dontknow">Затрудняюсь ответить</label>
                     </div>
                 </fieldset>
                 <fieldset class="form-inner  form-inner--width-fullpage">
-                    <h3 class="form-inner__title">Посещенные достопримечательности:</h3>
+                    <h3 class="form-inner__title  form-inner__title--cols">Посещенные достопримечательности:</h3>
                     <!-- TODO: Посмотреть на излишнюю html-вложенность -->
                     <div class="form-group__flex-wrapper">
                         <div>
-                            <div class="form-group">
+                            <div class="form-group  form-group--around">
                                 <input class="form__field" type="checkbox" id="bridge" name="attraction" value="bridge" checked>
                                 <label class="form__label  form__label--bold" for="bridge">Мост дьявола</label>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group  form-group--around">
                                 <input class="form__field" type="checkbox" id="park" name="attraction" value="park" checked>
                                 <label class="form__label  form__label--bold" for="park">Слайд-парк</label>
                             </div>
                         </div>
                         <div>
-                            <div class="form-group">
+                            <div class="form-group  form-group--around">
                                 <input class="form__field" type="checkbox" id="bell" name="attraction" value="bell">
                                 <label class="form__label  form__label--bold" for="bell">Гора-колокол</label>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group  form-group--around">
                                 <input class="form__field" type="checkbox" id="red" name="attraction" value="red"  checked>
                                 <label class="form__label  form__label--bold" for="red">Красные скалы</label>
                             </div>
@@ -109,9 +109,9 @@
                 </fieldset>
                 <fieldset class="form-inner  form-inner--width-fullpage">
                     <h3 class="form-inner__title">Опишите свои эмоции:</h3>
-                    <textarea class="form__field" id="textreview" name="textreview" placeholder="Опишите подробно все свои восторги"></textarea>
+                    <textarea class="form__field  form__field--area" id="textreview" name="textreview" placeholder="Опишите подробно все свои восторги" rows="6" cols="32"></textarea>
                 </fieldset>
-                <button class="btn" type="submit">Отправить отзыв</button>
+                <button class="btn form-inner__btn" type="submit">Отправить отзыв</button>
             </form>
             <section class="popup  popup--closed">
                 <h3 class="popup__title">Что-то пошло не так!</h3>
